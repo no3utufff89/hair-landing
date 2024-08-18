@@ -1,0 +1,87 @@
+.cause {
+    background-color: #2793BF;
+    padding-top: 81px;
+    padding-bottom: 81px;
+    background: linear-gradient(90deg, #43B2D4 47.46%, rgba(39, 147, 191, 0) 97.66%), url(../../img/cause_bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+
+    &__title {
+        color: #FFFFFFB3;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 41px;
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 46px;
+        font-size: 40px;
+        color: $white;
+        margin-bottom: 40px;
+        max-width: 600px;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: 303px max-content;
+        column-gap: 71px;
+        row-gap: 26px;
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 160%;
+        color: $white;
+        max-width: 617px;
+      
+        &_opacity {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: #FFFFFFB3;
+            margin-bottom: 57px;
+            
+        }
+    }
+    &__link {
+        border-radius: 50px;
+        border: 2px solid $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 16px;
+        color: $white;
+        padding: 11px 87px;
+        max-width: max-content;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 17px;
+        font-size: 16px;
+        line-height: 41px;
+        color: $white;
+        &::before {
+            position: relative;
+            content: "";
+            background-image: url(../../img/icons/checked_icon.svg);
+            background-repeat: no-repeat;
+            background-position: center left 5px;
+            background-size: 12px;
+            width: 21px;
+            height: 21px;
+            display: block;
+            background-color: $white;
+            border-radius: 50%;
+        }
+    }
+}

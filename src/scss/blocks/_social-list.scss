@@ -1,0 +1,35 @@
+/*===========Social-LIST==============*/
+.social-links-list {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+   margin-right: 57px;
+    &_simple {
+        margin-right: 0;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        color: $white;
+        background-color: $darkBg-90;
+        border-radius: 50%;
+        width: 23px;
+        height: 24px;
+        opacity: 0.3;
+        transition: opacity 0.3s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+        &_simple {
+            opacity: 1;
+            background-color: transparent;
+            &>.icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    
+}
+/*=========== END Social-LIST==============*/

@@ -1,0 +1,72 @@
+.program-details {
+    padding-top: 80px;
+    padding-bottom: 68px;
+    &__title {
+        color: #269BC7;
+        line-height: 25px;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    &__description {
+        font-family: 'Montserrat', sans-serif;
+        color: $activetext;
+        font-weight: 700;
+        line-height: 25px;
+        font-size: 20px;
+        margin-bottom: 52px;
+        max-width: 698px;
+    }   
+    &__content {
+        display: flex;
+        column-gap: 48px;
+        justify-content: space-between;
+    }
+}
+.program-steps {
+    display: flex;
+    flex-direction: column;
+    &__item {
+        padding-top: 23px;
+        padding-bottom: 36px;
+        display: flex;
+        align-items: center;
+        column-gap: 83px;
+        &:nth-child(2) {
+            border-top: 2px solid #EBECF3;
+            border-bottom:  2px solid #EBECF3;
+        }
+    }
+}
+.program-step {
+    &__icon {
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 33px;
+        width: 76px;
+        height: 76px;
+        flex-shrink: 0;
+        background-color: #F2F6FB;
+       &_approach {
+            background-image: url(../../img/icons/approach_icon.svg);
+        }
+        &_safe {
+            background-image: url(../../img/icons/guard_icon.svg);
+        }
+        &_tech {
+            background-image: url(../../img/icons/roket_icon.svg);
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        color: $activetext;
+        &>a {
+            font-weight: 600;
+        }
+    }
+}

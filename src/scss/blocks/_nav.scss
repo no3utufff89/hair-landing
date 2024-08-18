@@ -1,0 +1,49 @@
+/*============NAV==================*/
+.menu-btn {
+  width: 28px;
+  height: 16px;
+  display: flex;
+  row-gap: 5px;
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 2px;
+    background-color: $white;
+    border-radius: 50px;
+    width: 100%;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  &__line {
+    background-color: $white;
+    width: 100%;
+    height: 2px;
+    display: block;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    &__link {
+        color: $lighttext;
+        font-size: 15px;
+      line-height: 40px;
+        &_active {
+            color: $activetext;
+        }
+    }
+}
+/*=======END NAV==================*/

@@ -1,0 +1,63 @@
+.action {
+    position: relative;
+    margin-top: -87px;
+   &__wrapper {
+   padding: 46px 67px;
+    background-color: $pink;
+   
+   
+    box-shadow: 10px 16px 20px 0px #9FA8B42B;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    
+   }
+   &__text {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: $white;
+    max-width: 375px;
+     line-height: 145%;
+   
+   }
+   &__contact {
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+   }
+   &__phone-link {
+    color: #FFF8F8;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    &_phone-image {
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &>.icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+   }
+   &__transition-link {
+    background-color: $beige;
+    border-radius: 30px;
+    color: $activetext;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 287px;
+    height: 49px;
+    margin-left: auto;
+}
+}

@@ -1,0 +1,93 @@
+.program {
+  padding-top: 76px;
+  padding-bottom: 57px;
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 43px;
+  }
+  &>.container {
+    display: flex;
+    column-gap: 46px;
+    justify-content: space-between;
+  }
+  &__title {
+    
+  }
+ 
+}
+.program-links {
+  display: grid;
+  grid-template-columns: repeat(2, 261px);
+  grid-template-rows: repeat(2, 261px);
+  gap: 52px;
+  &__item {
+    height: 261px;
+    border-radius: 30px;
+    flex-grow: 0;
+    transition: 0.3s ease-in-out;
+    &:nth-child(1) {
+      background-color: #deecf7;
+    }
+    &:nth-child(2) {
+      background-color: #deecf7;
+    }
+    &:nth-child(3) {
+      background-color: #c0e9fc;
+    }
+    &:nth-child(4) {
+      background-color: #deedfe;
+    }
+    &:hover {
+        background-color: #FBDCF5;
+        box-shadow: 10px 16px 20px 0px #9FA8B42B;
+
+    }
+  }
+  &__link {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 33px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 261px;
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+.program-card {
+  &__icon {
+    width: 69px;
+    height: 69px;
+    display: block;
+    border-radius: 50%;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &_diagnostic {
+      background-image: url(../../img/icons/diag_icon.svg);
+    }
+    &_medical {
+      background-image: url(../../img/icons/medical_icon.svg);
+    }
+    &_consultation {
+      background-image: url(../../img/icons/smile_icon.svg);
+    }
+    &_care {
+      background-image: url(../../img/icons/care_icon.svg);
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    color: $activetext;
+  }
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8a929e;
+  }
+}

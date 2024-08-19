@@ -1,0 +1,94 @@
+.faq {
+  padding-top: 63px;
+  padding-bottom: 120px;
+  background-repeat: no-repeat;
+  background: url(../../img/faq_bg.png), linear-gradient(180deg, #C9CDD0 0%, #BFC1C2 100%);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  &>.container {
+    display: flex;
+    justify-content: end;
+
+  }
+  &__title {
+    color: $activetext;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    font-family: 'Montserrat', sans-serif;
+    text-wrap: balance;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 45px;
+    color: #8A929E;
+    margin-bottom: 27px;
+  }
+
+  &__content {
+    width: 531px;
+  }
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  &__item {
+    border-radius: 15px;
+    border: 2px solid #F2F6FB;
+    overflow: hidden;
+  }
+}
+.faq-element {
+  &__header {
+    background-color: #F2F6FB;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    &:before {
+      content: "";
+      display: block;
+      width: 41px;
+      height: 41px;
+      background-image: url(../../img/icons/arrow_icon.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-color: #FFF;
+      border-radius: 10px;
+    }
+    &_active:before {
+      background-color: #269BC7;
+      background-image: url(../../img/icons/arrow-white.svg);
+    }
+  }
+  &__body {
+    background-color: #F9EFFE;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 10px;
+    display: none;
+  }
+  &__title {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 45px;
+    color: $activetext;
+    letter-spacing: -0.5px;
+
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: $activetext;
+  }
+}

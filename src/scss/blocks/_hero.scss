@@ -3,6 +3,24 @@
     position: relative;
     padding-top: 91px;
     padding-bottom: 204px;
+  z-index: 0;
+  &>.container {
+    position: relative;
+  }
+  &__wrapper {
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(8, 60px);
+    z-index: -1;
+  }
+  &__main-image {
+
+  }
     &::after {
         position: absolute;
         content: "";
@@ -36,6 +54,35 @@
     max-width: 720px;
   }
 }
+.image-01, .image-02,.image-03 {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2.5px solid #DFE2E4;
+}
+.image-01 {
+  width: 197px;
+  height: 197px;
+  grid-column: 10/11;
+  margin-top: -32px;
+  justify-self: center;
+}
+.image-02 {
+  width: 254px;
+  height: 254px;
+  grid-column: 12/13;
+  grid-row: 1/4;
+  margin-top: 95px;
+ justify-self: end;
+}
+.image-03 {
+  width: 319px;
+  height: 319px;
+  grid-column: 10 / 13;
+  grid-row: 4 / 8;
+  margin-left: 167px;
+  align-self: self-start;
+}
+
 .points-list {
   display: flex;
   flex-direction: column;
@@ -112,7 +159,13 @@
 .hero-callback-list {
     width: 100%;
     position: relative;
-    display: none;
+
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  &_active {
+    max-height: 210px;
+    transition: max-height 0.25s ease-in;
+  }
     &__item {
       background-color: #fbfcfd;
       border-bottom: 2px solid #FBFCFD;

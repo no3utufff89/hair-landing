@@ -1,0 +1,212 @@
+.articles {
+  padding-bottom: 119px;
+  padding-top: 100px;
+  &__title {
+    margin-bottom: 100px;
+  }
+}
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: 245px 245px;
+  grid-auto-rows:245px;
+  grid-gap: 29px 58px;
+
+
+  &__item {
+    border-radius: 30px;
+    border: 2px solid #EBECF3;
+    display: flex;
+    flex-grow: 0;
+    width: 100%;
+    overflow: hidden;
+
+  }
+}
+.article {
+  color: $activetext;
+  grid-area: auto / span 6;
+  width: 611px;
+  // &:nth-child(3n+1), &:nth-child(3n+3) {
+  //   grid-area: auto / span 6;
+  //   width: 611px;
+  // }
+  // &:nth-child(3n-1) {
+  //   grid-area: span 2 / span 4;
+  //  width: 533px;
+  //   flex-direction: column;
+    
+  // }
+
+
+  &__content {
+    padding-left: 27px;
+    padding-top: 29px;
+    padding-right: 41px;
+    padding-bottom: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+
+    display: block;
+  }
+  &__author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+  }
+  &__doctor-speciality {
+    font-size: 12px;
+    line-height: 31px;
+    color: #8A929E;
+    letter-spacing: -0.5px;
+  }
+  &__image-link {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 252px;
+    height: 245px;
+    display: block;
+  }
+  &__more-link {
+    color: #D8D9E1;
+    font-size: 12px;
+    line-height: 31px;
+    letter-spacing: -0.5px;
+    transition: color 0.2s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: end;
+    justify-content: end;
+    &:after {
+      position: relative;
+      content: "→";
+      color: inherit;
+      display: block;
+    }
+    &:hover {
+      color: #269BC7;
+    }
+  }
+  &__short-description {
+    font-size: 13px;
+    line-height: 160%;
+    color: #8A929E;
+    letter-spacing: -0.5px;
+    margin: 0;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+  }
+  &__footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, auto);
+    border-top: 2px solid #EBECF3;
+    padding-top: 7px;
+  }
+  &-big {
+    color: $activetext;
+    flex-direction: column;
+   grid-area: span 2 / span 4;
+   width: 533px;
+    &__content {
+      padding-top: 31px;
+   padding-right: 35px;
+   padding-bottom: 23px;
+   padding-left: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__title-link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: -0.5px;
+      font-weight: 600;
+margin-bottom: 28px;
+      display: block;
+    }
+    &__author {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: -0.5px;
+      font-weight: 600;
+    }
+    &__doctor-speciality {
+      font-size: 12px;
+      line-height: 31px;
+      color: #8A929E;
+      letter-spacing: -0.5px;
+    }
+    &__image-link {
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: 100%;
+      height: 213px;
+      display: block;
+    }
+    &__more-link {
+      color: #D8D9E1;
+      font-size: 12px;
+      line-height: 31px;
+      letter-spacing: -0.5px;
+      transition: color 0.2s ease-in-out;
+      position: relative;
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      align-self: end;
+      justify-content: end;
+      &:after {
+        position: relative;
+        content: "→";
+        color: inherit;
+        display: block;
+      }
+      &:hover {
+        color: #269BC7;
+      }
+    }
+    &__short-description {
+      font-size: 13px;
+      line-height: 160%;
+      color: #8A929E;
+      letter-spacing: -0.5px;
+      margin: 0;
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      max-width: 342px;
+      margin-bottom: 49px;
+
+    }
+    &__footer {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: repeat(2, auto);
+      border-top: 2px solid #EBECF3;
+      padding-top: 7px;
+    }
+  }
+}

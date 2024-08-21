@@ -1,0 +1,140 @@
+<section class="section tariffs" id="pay-form">
+  <div class="container">
+    <div class="rate">
+      <form action="" class="rate-form">
+        <div class="rate-form__content">
+          <p class="rate-form__title">Стоимость курса</p>
+          <img
+            src="../img/rate_image-light.png"
+            alt="Картинка тарифа"
+            class="rate-form__image"
+            width="472"
+            height="230"
+          />
+          <p class="rate-form__text">
+            Рассрочка по тарифу от
+            <span class="rate-form__half-price">1000</span> ₽ / мес
+          </p>
+          <ol class="rate-form-list">
+            <li class="rate-form-list__item rate-form-list__item_colored">
+              волосы перестанут выпадать через 1 месяц
+            </li>
+            <li class="rate-form-list__item">
+              индивидуальная программа рекомендаций
+            </li>
+            <li class="rate-form-list__item">
+              оплата в рассрочку на 6, 9 и 12 месяцев
+            </li>
+          </ol>
+          <fieldset class="rate-form__fieldset">
+            <legend class="rate-form__legend">Выберите подходящий тариф</legend>
+
+            <input
+              type="radio"
+              id="light"
+              name="rate-name"
+              value="light"
+              class="light-rate-input"
+              checked
+            />
+            <label class="rate-form__rate-radio" for="light">Лайт</label>
+
+            <input
+              type="radio"
+              id="standard"
+              name="rate-name"
+              value="standard"
+              class="standard-rate-input"
+            />
+            <label class="rate-form__rate-radio" for="standard">Стандарт</label>
+
+            <input
+              type="radio"
+              id="premium"
+              name="rate-name"
+              value="premium"
+              class="premium-rate-input"
+            />
+            <label class="rate-form__rate-radio" for="premium">Премиум</label>
+          </fieldset>
+        </div>
+        <div class="rate-form__details current-rate">
+          <p class="rate-form__title rate-form__title_normal">
+            Ваш тариф: <span class="current-rate__name">Лайт</span>
+          </p>
+          <p class="current-rate__price">
+            Стоимость выбранного курса
+            <span class="current-rate__total-price">14950</span> ₽
+          </p>
+          <a href="/" class="current-rate__link">подробнее о тарифе</a>
+          <fieldset class="payment-fieldset">
+            <legend class="payment-fieldset__title">
+              Шаг первый. Выберите способ оплаты
+            </legend>
+
+            <label class="payment-fieldset__label" for="card-payment"
+              ><input
+                type="radio"
+                id="card-payment"
+                name="payment-form"
+                value="card"
+                class="payment-fieldset__input-custom"
+                checked
+              />
+              По карте</label
+            >
+
+            <label class="payment-fieldset__label" for="installment-plan"
+              ><input
+                type="radio"
+                id="installment-plan"
+                name="payment-form"
+                value="installment-plan"
+                class="payment-fieldset__input-custom"
+              />
+              В рассрочку</label
+            >
+          </fieldset>
+          <fieldset class="payment-fieldset payer">
+            <legend class="payment-fieldset__title">
+              Шаг второй. Заполните данные о плательщике
+            </legend>
+            <input
+              type="text"
+              class="payer__input payer__name"
+              placeholder="Фамилия и имя плательщика"
+              required
+              autocomplete="false"
+             
+            />
+            <div class="payment-fieldset__group">
+              <input
+                type="email"
+                class="payer__input"
+                placeholder="email"
+                required
+                autocomplete="false"
+              />
+              <input  class="payer__input" type="tel" placeholder="+7 900 000 00 00" required />
+            </div>
+          </fieldset>
+          <button class="btn rate-form__submit" type="submit">Оплатить</button>
+          <label for="payment-agreement" class="payment-agreement">
+            <input
+              id="payment-agreement"
+              type="checkbox"
+              class="payment-agreement__checkbox"
+              value="true"
+              required
+              
+            />
+            нажимая Оплатить, вы соглашаетесь с
+            <a href="/" class="payment-agreement__link">Политикой</a> и
+            <a href="/" class="payment-agreement__link">Офертой</a>
+            
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

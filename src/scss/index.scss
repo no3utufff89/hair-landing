@@ -3,6 +3,7 @@
 @import 'normalize';
 @include normalize();
 @import 'default';
+@import 'blocks/cookie';
 @import 'blocks/social-list';
 @import 'blocks/header';
 @import 'blocks/nav';
@@ -22,3 +23,8 @@
 @import 'blocks/effect';
 @import 'blocks/faq';
 @import 'blocks/reviews';
+@import 'blocks/tariffs';
+@import 'blocks/contacts';
+@import 'blocks/articles';
+@import 'blocks/subscribe';
+@import 'blocks/footer';

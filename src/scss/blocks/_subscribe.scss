@@ -1,0 +1,96 @@
+.subscribe {
+    background: linear-gradient(90deg, #F0F0FD 0%, #F7F2FF 48.65%, #FAEDFD 99%);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &>.container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info {
+       position: relative;
+       display: flex;
+       padding-left: 30px;
+       align-items: center;
+       column-gap: 30px;
+       max-width: 660px;
+       &::before {
+        content: "";
+        background-image: url(../../img/bell.png);
+        background-repeat: no-repeat;
+        width: 116px;
+        height: 116px;
+        position: relative;
+        flex-shrink: 0;
+       }
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 160%;
+        color: $activetext;
+    }
+}
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    max-width: 467px;
+    flex-grow: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    &__btn {
+        height: inherit;
+        width: 170px;
+        background: linear-gradient(89.18deg, #108ABD -4.19%, #4CB9D8 112.48%);
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 42px;
+        &_white {
+            background: #fff;
+            color: #26364B;
+        }
+    }
+    &__input {
+        height: inherit;
+        outline: none;
+        flex-grow: 1;
+        border: none;
+        position: relative;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 25px;
+
+        &::placeholder {
+           color: #C8CADD;
+           font-size: 18px;
+           background-repeat: no-repeat;
+           background-image: url(../../img/icons/mail-colored-icon.svg);
+           background-size: 24px;
+           display: block;
+           letter-spacing: -0.5px;
+           padding-left: 29px;
+          
+
+        }
+      &_transparent {
+        background-color: transparent;
+        border-top: 2px solid #7D869336;
+        border-left: 2px solid #7D869336;
+        border-bottom:  2px solid #7D869336;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: $white;
+        &::placeholder {
+          color: #C8CADD;
+          padding-top: 2px;
+          opacity: 0.3;
+        }
+      }
+    }
+}

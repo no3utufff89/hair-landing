@@ -43,7 +43,7 @@
 }
 .faq-element {
   &__header {
-    background-color: #F2F6FB;
+    background-color: $white;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 12px;
-      background-color: #FFF;
+      background-color: #F2F6FB;
       border-radius: 10px;
     }
     &_active:before {

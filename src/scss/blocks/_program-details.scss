@@ -60,6 +60,14 @@
         &_tech {
             background-image: url(../../img/icons/roket_icon.svg);
         }
+        
+       
+    }
+    &__decor {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
     }
     &__text {
         font-size: 16px;
@@ -68,5 +76,12 @@
         &>a {
             font-weight: 600;
         }
+    }
+    &__title {
+        color: $activetext;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
     }
 }

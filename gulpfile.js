@@ -131,7 +131,7 @@ export const scss = () =>
         .pipe(compSass().on('error', compSass.logError))
         .pipe(
             gulpif(
-                !dev,
+                dev,
                 autoprefixer({
                     cascade: false,
                     grid: false,

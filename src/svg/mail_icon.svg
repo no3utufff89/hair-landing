@@ -1,0 +1,6 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+	<defs/>
+	<rect id="почта" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<path id="icon/communication/mail_outline_24px" d="M4 4L20 4C21.0996 4 22 4.8999 22 6L22 18C22 19.1001 21.0996 20 20 20L4 20C2.90039 20 2 19.1001 2 18L2.00977 6C2.00977 4.8999 2.90039 4 4 4ZM4 6L12 11L20 6L4 6ZM20 17C20 17.55 19.5498 18 19 18L5 18C4.4502 18 4 17.55 4 17L4 8L10.9404 12.3401C11.5898 12.75 12.4102 12.75 13.0596 12.3401L20 8L20 17Z" clip-rule="evenodd" fill="currentColor" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

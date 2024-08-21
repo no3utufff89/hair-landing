@@ -9,7 +9,7 @@
     &:after {
       position: relative;
       content: "";
-      background-image: url(../../img/effect_image.png);
+      background-image: url(../img/effect_image.png);
       width: 538px;
       height: 550px;
       right: -82px;
@@ -83,16 +83,16 @@
   background-position: center;
   background-size: contain;
   &-1 {
-    background-image: url(../../img/stat-1.svg);
+    background-image: url(../img/stat-1.svg);
   }
   &-2 {
-    background-image: url(../../img/stat-2.svg);
+    background-image: url(../img/stat-2.svg);
   }
   &-3 {
-    background-image: url(../../img/stat-3.svg);
+    background-image: url(../img/stat-3.svg);
   }
   &-4 {
-    background-image: url(../../img/stat-4.svg);
+    background-image: url(../img/stat-4.svg);
   }
 
 

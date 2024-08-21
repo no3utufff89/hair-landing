@@ -2,7 +2,7 @@
     background-color: #2793BF;
     padding-top: 81px;
     padding-bottom: 81px;
-    background: linear-gradient(90deg, #43B2D4 47.46%, rgba(39, 147, 191, 0) 97.66%), url(../../img/cause_bg.png);
+    background: linear-gradient(90deg, #43B2D4 47.46%, rgba(39, 147, 191, 0) 97.66%), url(../img/cause_bg.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
@@ -73,7 +73,7 @@
         &::before {
             position: relative;
             content: "";
-            background-image: url(../../img/icons/checked_icon.svg);
+            background-image: url(../img/icons/checked_icon.svg);
             background-repeat: no-repeat;
             background-position: center left 5px;
             background-size: 12px;

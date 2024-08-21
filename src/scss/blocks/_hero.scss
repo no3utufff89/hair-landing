@@ -100,7 +100,7 @@
     &::before {
       position: relative;
       content: '';
-      background-image: url(../../img/icons/point_decor.svg);
+      background-image: url(../img/icons/point_decor.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -147,7 +147,7 @@
         height: 10px;
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url(../../img/icons/arrow.svg);
+        background-image: url(../img/icons/arrow.svg);
     }
     &__placeholder {
         font-size: 12px;

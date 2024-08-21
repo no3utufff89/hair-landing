@@ -2,7 +2,7 @@
   padding-top: 63px;
   padding-bottom: 120px;
   background-repeat: no-repeat;
-  background: url(../../img/faq_bg.png), linear-gradient(180deg, #C9CDD0 0%, #BFC1C2 100%);
+  background: url(../img/faq_bg.png), linear-gradient(180deg, #C9CDD0 0%, #BFC1C2 100%);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
@@ -57,7 +57,7 @@
       display: block;
       width: 41px;
       height: 41px;
-      background-image: url(../../img/icons/arrow_icon.svg);
+      background-image: url(../img/icons/arrow_icon.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 12px;
@@ -66,7 +66,7 @@
     }
     &_active:before {
       background-color: #269BC7;
-      background-image: url(../../img/icons/arrow-white.svg);
+      background-image: url(../img/icons/arrow-white.svg);
     }
   }
   &__body {

@@ -1087,7 +1087,7 @@ iframe {
 
 .hot-offer:before {
   content: "";
-  background-image: url(../../img/icons/percent_icon.svg);
+  background-image: url(../img/icons/percent_icon.svg);
   background-repeat: no-repeat;
   width: 43px;
   height: 43px;
@@ -1370,7 +1370,7 @@ iframe {
 .points-list__item::before {
   position: relative;
   content: "";
-  background-image: url(../../img/icons/point_decor.svg);
+  background-image: url(../img/icons/point_decor.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1426,7 +1426,7 @@ iframe {
   height: 10px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../../img/icons/arrow.svg);
+  background-image: url(../img/icons/arrow.svg);
 }
 
 .top-element__placeholder {
@@ -1656,19 +1656,19 @@ iframe {
 }
 
 .program-card__icon_diagnostic {
-  background-image: url(../../img/icons/diag_icon.svg);
+  background-image: url(../img/icons/diag_icon.svg);
 }
 
 .program-card__icon_medical {
-  background-image: url(../../img/icons/medical_icon.svg);
+  background-image: url(../img/icons/medical_icon.svg);
 }
 
 .program-card__icon_consultation {
-  background-image: url(../../img/icons/smile_icon.svg);
+  background-image: url(../img/icons/smile_icon.svg);
 }
 
 .program-card__icon_care {
-  background-image: url(../../img/icons/care_icon.svg);
+  background-image: url(../img/icons/care_icon.svg);
 }
 
 .program-card__title {
@@ -1881,8 +1881,8 @@ iframe {
   background-color: #2793BF;
   padding-top: 81px;
   padding-bottom: 81px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(47.46%, #43B2D4), color-stop(97.66%, rgba(39, 147, 191, 0))), url(../../img/cause_bg.png);
-  background: linear-gradient(90deg, #43B2D4 47.46%, rgba(39, 147, 191, 0) 97.66%), url(../../img/cause_bg.png);
+  background: -webkit-gradient(linear, left top, right top, color-stop(47.46%, #43B2D4), color-stop(97.66%, rgba(39, 147, 191, 0))), url(../img/cause_bg.png);
+  background: linear-gradient(90deg, #43B2D4 47.46%, rgba(39, 147, 191, 0) 97.66%), url(../img/cause_bg.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
@@ -1983,7 +1983,7 @@ iframe {
 .cause__item::before {
   position: relative;
   content: "";
-  background-image: url(../../img/icons/checked_icon.svg);
+  background-image: url(../img/icons/checked_icon.svg);
   background-repeat: no-repeat;
   background-position: center left 5px;
   background-size: 12px;
@@ -2198,15 +2198,15 @@ iframe {
 }
 
 .program-step__icon_approach {
-  background-image: url(../../img/icons/approach_icon.svg);
+  background-image: url(../img/icons/approach_icon.svg);
 }
 
 .program-step__icon_safe {
-  background-image: url(../../img/icons/guard_icon.svg);
+  background-image: url(../img/icons/guard_icon.svg);
 }
 
 .program-step__icon_tech {
-  background-image: url(../../img/icons/roket_icon.svg);
+  background-image: url(../img/icons/roket_icon.svg);
 }
 
 .program-step__decor {
@@ -2311,7 +2311,7 @@ iframe {
   display: block;
   width: 41px;
   height: 41px;
-  background-image: url(../../img/icons/arrow_icon.svg);
+  background-image: url(../img/icons/arrow_icon.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px;
@@ -2337,7 +2337,7 @@ iframe {
 }
 
 .treatment__container {
-  background-image: url(../../img/treatment_bg.png);
+  background-image: url(../img/treatment_bg.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
@@ -2861,7 +2861,7 @@ iframe {
   height: 10px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../../img/icons/arrow.svg);
+  background-image: url(../img/icons/arrow.svg);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -2975,7 +2975,7 @@ iframe {
   height: 21px;
   -ms-flex-item-align: center;
   align-self: center;
-  background-image: url(../../img/icons/cross_icon.svg);
+  background-image: url(../img/icons/cross_icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -2993,7 +2993,7 @@ iframe {
   width: 21px;
   height: 21px;
   background-position: center;
-  background-image: url(../../img/icons/point_decor.svg);
+  background-image: url(../img/icons/point_decor.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -3106,7 +3106,7 @@ iframe {
   width: 21px;
   height: 21px;
   background-position: center;
-  background-image: url(../../img/icons/point_decor.svg);
+  background-image: url(../img/icons/point_decor.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -3367,7 +3367,7 @@ iframe {
 .effect > .container:after {
   position: relative;
   content: "";
-  background-image: url(../../img/effect_image.png);
+  background-image: url(../img/effect_image.png);
   width: 538px;
   height: 550px;
   right: -82px;
@@ -3472,27 +3472,27 @@ iframe {
 }
 
 .stat-1 {
-  background-image: url(../../img/stat-1.svg);
+  background-image: url(../img/stat-1.svg);
 }
 
 .stat-2 {
-  background-image: url(../../img/stat-2.svg);
+  background-image: url(../img/stat-2.svg);
 }
 
 .stat-3 {
-  background-image: url(../../img/stat-3.svg);
+  background-image: url(../img/stat-3.svg);
 }
 
 .stat-4 {
-  background-image: url(../../img/stat-4.svg);
+  background-image: url(../img/stat-4.svg);
 }
 
 .faq {
   padding-top: 63px;
   padding-bottom: 120px;
   background-repeat: no-repeat;
-  background: url(../../img/faq_bg.png), -webkit-gradient(linear, left top, left bottom, from(#C9CDD0), to(#BFC1C2));
-  background: url(../../img/faq_bg.png), linear-gradient(180deg, #C9CDD0 0%, #BFC1C2 100%);
+  background: url(../img/faq_bg.png), -webkit-gradient(linear, left top, left bottom, from(#C9CDD0), to(#BFC1C2));
+  background: url(../img/faq_bg.png), linear-gradient(180deg, #C9CDD0 0%, #BFC1C2 100%);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
@@ -3568,7 +3568,7 @@ iframe {
   display: block;
   width: 41px;
   height: 41px;
-  background-image: url(../../img/icons/arrow_icon.svg);
+  background-image: url(../img/icons/arrow_icon.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px;
@@ -3578,7 +3578,7 @@ iframe {
 
 .faq-element__header_active:before {
   background-color: #269BC7;
-  background-image: url(../../img/icons/arrow-white.svg);
+  background-image: url(../img/icons/arrow-white.svg);
 }
 
 .faq-element__body {
@@ -3700,7 +3700,7 @@ iframe {
   background-color: #269BC7;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../../img/icons/quote.svg);
+  background-image: url(../img/icons/quote.svg);
   width: 45px;
   height: 45px;
   position: relative;
@@ -4587,7 +4587,7 @@ iframe {
 
 .subscribe__info::before {
   content: "";
-  background-image: url(../../img/bell.png);
+  background-image: url(../img/bell.png);
   background-repeat: no-repeat;
   width: 116px;
   height: 116px;
@@ -4655,7 +4655,7 @@ iframe {
   color: #C8CADD;
   font-size: 18px;
   background-repeat: no-repeat;
-  background-image: url(../../img/icons/mail-colored-icon.svg);
+  background-image: url(../img/icons/mail-colored-icon.svg);
   background-size: 24px;
   display: block;
   letter-spacing: -0.5px;
@@ -4666,7 +4666,7 @@ iframe {
   color: #C8CADD;
   font-size: 18px;
   background-repeat: no-repeat;
-  background-image: url(../../img/icons/mail-colored-icon.svg);
+  background-image: url(../img/icons/mail-colored-icon.svg);
   background-size: 24px;
   display: block;
   letter-spacing: -0.5px;
@@ -4677,7 +4677,7 @@ iframe {
   color: #C8CADD;
   font-size: 18px;
   background-repeat: no-repeat;
-  background-image: url(../../img/icons/mail-colored-icon.svg);
+  background-image: url(../img/icons/mail-colored-icon.svg);
   background-size: 24px;
   display: block;
   letter-spacing: -0.5px;
@@ -4688,7 +4688,7 @@ iframe {
   color: #C8CADD;
   font-size: 18px;
   background-repeat: no-repeat;
-  background-image: url(../../img/icons/mail-colored-icon.svg);
+  background-image: url(../img/icons/mail-colored-icon.svg);
   background-size: 24px;
   display: block;
   letter-spacing: -0.5px;
@@ -4699,7 +4699,7 @@ iframe {
   color: #C8CADD;
   font-size: 18px;
   background-repeat: no-repeat;
-  background-image: url(../../img/icons/mail-colored-icon.svg);
+  background-image: url(../img/icons/mail-colored-icon.svg);
   background-size: 24px;
   display: block;
   letter-spacing: -0.5px;

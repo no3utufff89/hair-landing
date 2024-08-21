@@ -17,7 +17,7 @@
        max-width: 660px;
        &::before {
         content: "";
-        background-image: url(../../img/bell.png);
+        background-image: url(../img/bell.png);
         background-repeat: no-repeat;
         width: 116px;
         height: 116px;
@@ -69,7 +69,7 @@
            color: #C8CADD;
            font-size: 18px;
            background-repeat: no-repeat;
-           background-image: url(../../img/icons/mail-colored-icon.svg);
+           background-image: url(../img/icons/mail-colored-icon.svg);
            background-size: 24px;
            display: block;
            letter-spacing: -0.5px;

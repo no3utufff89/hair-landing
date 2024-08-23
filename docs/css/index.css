@@ -1917,7 +1917,7 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   row-gap: 25px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .problems-list__item {
@@ -1925,6 +1925,10 @@ iframe {
   padding-left: 42px;
   padding-bottom: 42px;
   padding-right: 134px;
+  display: none;
+}
+
+.problems-list__item_active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2230,15 +2234,40 @@ iframe {
   flex-grow: 1;
   height: 10px;
   position: relative;
+  overflow: hidden;
 }
 
-.work-stat__level::before {
-  position: absolute;
+.work-stat__level_zero:before {
+  -webkit-transform: translateX(-101%);
+  transform: translateX(-101%);
+}
+
+.work-stat__level_tests:before,
+.work-stat__level_diagnostic:before,
+.work-stat__level_appointments:before {
+  display: block;
   content: "";
   background-color: #FF84A0;
-  width: 90%;
-  height: inherit;
   border-radius: 7px;
+  height: 100%;
+}
+
+.work-stat__level_tests:before {
+  -webkit-transition: 1.8s ease;
+  transition: 1.8s ease;
+  width: 87%;
+}
+
+.work-stat__level_diagnostic:before {
+  -webkit-transition: 1.6s ease-in;
+  transition: 1.6s ease-in;
+  width: 94%;
+}
+
+.work-stat__level_appointments:before {
+  -webkit-transition: 1.7s ease-out;
+  transition: 1.7s ease-out;
+  width: 98%;
 }
 
 .program-details {

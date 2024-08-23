@@ -12,9 +12,11 @@ export const getPageElements = () => {
     const headerCenterLine = document.querySelector('.header__center');
     const heroDropdownList = document.querySelector('.select-list');
     const heroSelectOption = document.querySelector('.callback-select__option');
+    const ourWorkSection = document.querySelector('.our-work');
+    const animateLevel = document.querySelectorAll('.work-stat__level');
     //TABS & BLOCKS
-    const tabBlock = document.querySelector('.problem-card');
-    const tabBtn = document.querySelector('.propblem-btn');
+    const tabBlock = document.querySelectorAll('.problem-card');
+    const tabBtn = document.querySelectorAll('.propblem-btn');
     return {
         cookieOkBtn,
         cookieBlock,
@@ -29,5 +31,7 @@ export const getPageElements = () => {
         heroSelectOption,
         tabBlock,
         tabBtn,
+        ourWorkSection,
+        animateLevel,
     }
 }

@@ -72,19 +72,21 @@
 .problems-list {
    display: flex;
     row-gap: 25px;
-    overflow: hidden;
+    overflow: visible;
     &__item {
         padding-top: 42px;
         padding-left: 42px;
         padding-bottom: 42px;
         padding-right: 134px;
-        display: flex;
-        column-gap: 41px;
-        background-color: $white;
-        border-radius: 30px;
-        flex-shrink: 0;
-        width: 100%;
-
+        display: none;
+        &_active {
+            display: flex;
+            column-gap: 41px;
+            background-color: $white;
+            border-radius: 30px;
+            flex-shrink: 0;
+            width: 100%;
+        }
     }
 }
 .problem-card {

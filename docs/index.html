@@ -128,18 +128,7 @@
   <section class="section hero">
    
     <div class="container">
-      <div class="hero__wrapper">
-          <div class="hero__main-image image-01">
-              <img src="./img/hero_image_01.png" alt="" width="197" height="197">
-          </div>
-          <div class="hero__main-image image-02">
-              <img src="./img/hero_image_02.png" alt="" width="254" height="254">
-          </div>
-          <div class="hero__main-image image-03">
-              <img src="./img/hero_image_03.png" alt="" width="319" height="319">
-          </div>
-          <div class="hero__main-image image-04"></div>
-      </div>
+      
       <h1 class="hero__title">Лечение выпадения волос в клинике <span class="hero__title hero__title_variant">онлайн</span></h1>
       <p class="hero__slogan">
         “Восстановите свои волосы - восстановите свою жизнь”
@@ -152,31 +141,54 @@
           Мы поможем вам вернуть здоровые волосы
         </li>
       </ul>
+      <a href="/" class="video-link hero__video-link">
+        <span class="video-link__icon">
+          <svg class="icon" viewBox="0 0 20 20">
+            <use xlink:href="img/sprite.svg#play_icon"></use>
+         </svg>
+        </span>
+        <p class="video-link__text">
+          Смотреть видео
+        </p>
+      </a>
       <div class="hero__action-block hero-callback">
-        <div class="hero-callback__active-element">
-         <div class="top-element">
-          <p class="top-element__placeholder">
+        <div class="hero-callback__select-wrapper">
+          <div class="hero-callback__controls">
+            <div class="custom-select">Стресс и образ жизни</div>
+          <select class="callback-select" name="reasons-select" id="reasons-select" value="">
+            <option class="callback-select__option" value="Стресс и образ жизни" selected >Стресс и образ жизни</option>
+          </select>
+          </div>
+          <a href="/" class="callback-link">Бесплатная консультация</a>
+          <p class="hero-callback__placeholder">
             Причины выпадения волос
           </p>
-          <p class="top-element__option">
-            Стресс и образ жизни
-          </p>
-          
-         </div>
-          <a href="/" class="callback-link">
-            Бесплатная консультация
-          </a>
         </div>
-       <ul class="hero-callback-list">
-        <li class="hero-callback-list__item">
-          дефицит питательных веществ
-        </li>
-        <li class="hero-callback-list__item">
-          после родов
-        </li>
-       </ul>
+       
+       
+        
       
+       <ul class="select-list">
+        <li class="select-list__item">
+          Стресс и образ жизни
+        </li>
+        <li class="select-list__item">
+          Дефицит питательных веществ
+        </li>
+        <li class="select-list__item">
+          После родов
+        </li>
+      </ul>
       </div>
+      <div class="hero__wrapper">
+        <div class="hero__main-image image-01" id="first">
+  -      </div>
+        <div class="hero__main-image image-02">
+        </div>
+        <div class="hero__main-image image-03">
+        </div>
+        <div class="hero__main-image image-04"></div>
+    </div>
     </div>
   
   </section>
@@ -270,7 +282,7 @@
       </p>
       <div class="problems">
         <div class="problems__controls">
-          <button class="btn propblem-btn">
+          <button class="btn propblem-btn" >
             <span class="propblem-btn__icon">
               <svg class="icon" viewBox="0 0 30 30">
                   <use xlink:href="img/sprite.svg#stress_icon"></use>
@@ -321,7 +333,7 @@
         </div>
         <div class="problems__cards">
           <ul class="problems-list">
-              <li class="problems-list__item problem-card">
+              <li class="problems-list__item problem-card" >
                   <div class="problem-card__image">
                       <img src="img/problem_01.jpeg" alt="Заболевание щитовидной железы картинка"  width="435" height="376">
                   </div>
@@ -337,6 +349,22 @@
                       </a>
                   </div>
               </li>
+              <li class="problems-list__item problem-card" id="tab-block-2">
+                <div class="problem-card__image">
+                    <img src="img/problem_01.jpeg" alt="Заболевание щитовидной железы картинка"  width="435" height="376">
+                </div>
+                <div class="problem-card__content">
+                    <p class="problem-card__title">
+                        Заболевания щитовидной железыsdfsdfsdfsdfs
+                    </p>
+                    <p class="problem-card__text">
+                        <b>Гормон щитовидной железы</b> играет важную роль в развитии и поддержании волосяных фолликулов. Когда в организме слишком много или недостаточно гормона щитовидной железы, это может «шокировать эндокринную систему» и привести к состоянию <b>длительного выпадения волос</b>. (Из-за неправильного функционирования щитовидной железы гормоны, которые необходимы для обмена веществ, в волосяных фолликулах не образуются). Плохой обмен веществ приводит к дефициту белков и витаминов в волосах, в связи с чем они не растут должным образом. Структура стержня становится <b>ломкая, сухая и волосы выпадают</b>
+                    </p>
+                    <a href="#" class="problem-card__link">
+                        Подробнее
+                    </a>
+                </div>
+            </li>
           </ul>
         </div>
       </div>

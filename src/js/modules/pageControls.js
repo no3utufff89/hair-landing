@@ -1,4 +1,7 @@
-export const pageControls = (pageElements) => {
+import { getPageElements } from "../pageElements.js";
+const pageElements = getPageElements();
+
+export const pageControls = () => {
     pageElements.cookieOkBtn.addEventListener('click', () => {
         pageElements.cookieBlock.classList.remove('active')
     });
@@ -9,7 +12,19 @@ export const pageControls = (pageElements) => {
         pageElements.headerCenterLine.classList.add('header__center_normal');
     });
 
-    pageElements.heroDropdownBtn.addEventListener('click', () => {
-        pageElements.heroDropdownList.classList.toggle('hero-callback-list_active')
+    pageElements.heroSelectBlock.addEventListener('click', () => {
+        pageElements.heroDropdownList.classList.toggle('select-list_active');
+        pageElements.heroCustomSelect.classList.toggle('custom-select_active')
+    });
+    pageElements.heroDropdownList.addEventListener('click', (event) => {
+        const targetValue = event.target.innerText;
+        pageElements.heroSelectOption.value = targetValue
+        pageElements.heroCustomSelect.innerText = targetValue;
+       
+       
     })
+
+
 }
+
+

@@ -22,6 +22,7 @@
     }
 }
 .problems {
+   
     &__controls {
         display: flex;
         justify-content: space-between;
@@ -69,9 +70,9 @@
     }
 }
 .problems-list {
-    display: flex;
-    flex-direction: column;
+   display: flex;
     row-gap: 25px;
+    overflow: hidden;
     &__item {
         padding-top: 42px;
         padding-left: 42px;
@@ -81,6 +82,8 @@
         column-gap: 41px;
         background-color: $white;
         border-radius: 30px;
+        flex-shrink: 0;
+        width: 100%;
 
     }
 }

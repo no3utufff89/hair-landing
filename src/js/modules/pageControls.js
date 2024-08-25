@@ -1,6 +1,14 @@
 import { getPageElements } from "../pageElements.js";
 const pageElements = getPageElements();
-import {closeCookie, heroSectionDropdown, hideTopLine, pageObserver, tabsControl} from "./interaction.js";
+import {
+    closeCookie,
+    footerListActions,
+    heroSectionDropdown,
+    hideTopLine,
+    pageObserver,
+    paymentBlock,
+    tabsControl
+} from "./interaction.js";
 
 export const pageControls = () => {
     //Работа с печеньками, дописать позже
@@ -13,6 +21,9 @@ export const pageControls = () => {
     tabsControl()
     //Intersection Observer
     pageObserver();
+    //Вкладки тарифов
+    paymentBlock();
+    footerListActions()
 
 
 

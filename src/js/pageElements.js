@@ -17,6 +17,14 @@ export const getPageElements = () => {
     //TABS & BLOCKS
     const tabBlock = document.querySelectorAll('.problem-card');
     const tabBtn = document.querySelectorAll('.propblem-btn');
+    const tarifLabel = document.querySelectorAll('.rate-form__rate-radio');
+    const tarifCheckbox = document.querySelectorAll('.standard-rate-input');
+    const currentRateTotalPrice = document.querySelector('.current-rate__total-price');
+    const currentRateHalfPrice = document.querySelector('.rate-form__half-price');
+    const currentRateImage = document.querySelector('.rate-form__image');
+    const currentRateTitle = document.querySelector('.current-rate__name');
+    const footerListParent = document.querySelectorAll('.footer-list__parent');
+    const footerListDropdownTarget = document.querySelectorAll('.list-element__top');
     return {
         cookieOkBtn,
         cookieBlock,
@@ -33,5 +41,13 @@ export const getPageElements = () => {
         tabBtn,
         ourWorkSection,
         animateLevel,
+        tarifLabel,
+        tarifCheckbox,
+        currentRateTotalPrice,
+        currentRateHalfPrice,
+        currentRateImage,
+        currentRateTitle,
+        footerListParent,
+        footerListDropdownTarget
     }
 }

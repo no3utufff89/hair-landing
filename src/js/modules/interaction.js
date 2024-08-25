@@ -64,10 +64,58 @@ export const pageObserver = () => {
                })
                observer.unobserve(pageElements.ourWorkSection);
            }
-
        })
     }, {
         rootMargin: '0px',
     });
     observer.observe(pageElements.ourWorkSection);
 };
+export const paymentBlock = () => {
+    const data = [
+        {
+            type: 'light',
+            name: 'Лайт',
+            halfPrice: '1000',
+            totalPrice: '14950',
+            img: 'rate_image-light.png'
+        },
+        {
+            type: 'standard',
+            name: 'Стандарт',
+            halfPrice: '2000',
+            totalPrice: '25700',
+            img: 'rate_image-standard.png'
+        },
+        {
+            type: 'premium',
+            name: 'Премиум',
+            halfPrice: '3000',
+            totalPrice: '39800',
+            img: 'rate_image-premium.png'
+        },
+    ];
+   [...pageElements.tarifLabel].forEach(element => {
+    element.addEventListener('click', (event) => {
+        const target = event.target;
+        const targetData = data.find(item => item.type === target.getAttribute('data-type'));
+        pageElements.currentRateTotalPrice.innerText = targetData.totalPrice;
+        pageElements.currentRateHalfPrice.innerText = targetData.halfPrice;
+        pageElements.currentRateTitle.innerText = targetData.name;
+        pageElements.currentRateImage.src = `./img/${targetData.img}`;
+
+    })
+   })
+
+
+}
+
+export const footerListActions = () => {
+
+    [...pageElements.footerListDropdownTarget].forEach(element => {
+        element.addEventListener('click', (e) => {
+           const target = e.target;
+            const toggleTarget = target.closest('.footer-list__parent')
+            toggleTarget.classList.toggle('active-element')
+        })
+    })
+}

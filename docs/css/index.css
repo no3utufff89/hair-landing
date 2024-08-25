@@ -4943,7 +4943,7 @@ iframe {
   letter-spacing: -0.5px;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: 280px auto;
   grid-column: 3/4;
   grid-row: 1/4;
   row-gap: 81px;
